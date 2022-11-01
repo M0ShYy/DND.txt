@@ -1,7 +1,10 @@
+from classes import *
 
-def main(name):
+Player = Hero(health=100)
+rope = Item("Rope", True, 10)
 
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-main("world")
+print(f'Health: {Player.health}')
+Player.addtoinventory(rope, 2)
+print(Player.seeiventory())
+Player.addtoinventory(rope, 12)
+print(Player.seeiventory())
